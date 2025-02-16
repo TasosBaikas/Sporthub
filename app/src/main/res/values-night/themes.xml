@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.sporthub5" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+         <item name="colorPrimary">@color/dark_grey</item>
+        <item name="colorPrimaryVariant">#120F0F</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">#43A047</item>
+        <item name="colorSecondaryVariant">#7CB342</item>
+        <item name="colorOnSecondary">#290030</item>
+
+        <item name="colorAccent">@color/blue</item>
+
+    </style>
+
+    <style name="ThemeOverlay.AppTheme.TextInputEditText.Outlined" parent="">
+        <item name="colorPrimary">@color/colorOnPrimary</item>
+    </style>
+
+    <color name="colorPrimary">@color/dark_grey</color>
+    <color name="colorOnPrimary">@color/white</color>
+
+    <color name="white_or_black_primary_total">@color/black</color>
+
+    <color name="colorOnPrimaryHintText">@color/white_with_opacity</color>
+    <color name="white_or_black_with_opacity_mode">@color/white_with_opacity</color>
+    <color name="grey_mode">#171717</color>
+
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/white</color>
+</resources>

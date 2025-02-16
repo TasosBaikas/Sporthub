@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_user_message1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/user_avatar1"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/user_full_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/user_avatar1"
+            style="@style/TextAppearance.Compat.Notification.Title"
+
+            
+            android:paddingStart="7dp"
+            android:text="Anastasios B."
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/user_message1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/user_avatar1"
+            android:layout_below="@id/user_full_name1"
+            android:paddingStart="7dp"
+            android:text="User Messages Here User Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages Here User Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages Here"
+            style="@style/TextAppearance.Compat.Notification.Info"
+
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_user_message2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp">
+
+        <ImageView
+            android:id="@+id/user_avatar2"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/user_full_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/user_avatar2"
+            style="@style/TextAppearance.Compat.Notification.Title"
+
+            android:paddingStart="7dp"
+            android:text="Anastasios B."
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/user_message2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/user_avatar2"
+            android:layout_below="@id/user_full_name2"
+            android:paddingStart="7dp"
+            style="@style/TextAppearance.Compat.Notification.Info"
+
+            android:text="User Messages Hers HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages Here"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_user_message3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp">
+
+        <ImageView
+            android:id="@+id/user_avatar3"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/user_full_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/user_avatar3"
+            style="@style/TextAppearance.Compat.Notification.Title"
+
+            android:paddingStart="7dp"
+            android:text="Anastasios B."
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/user_message3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/user_avatar3"
+            android:layout_below="@id/user_full_name3"
+            android:paddingStart="7dp"
+            android:text="User Messages Here User Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages Here User Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages HereUser Messages Here"
+            style="@style/TextAppearance.Compat.Notification.Info"
+
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

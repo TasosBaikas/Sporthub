@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base shape with colored corners -->
+    <item>
+        <shape>
+            <solid android:color="?attr/colorOnPrimary"/>
+            <corners android:radius="32dp"/>
+        </shape>
+    </item>
+
+    <!-- Top shape with colorPrimary and slightly reduced corner radius -->
+    <item android:top="0.5dp" android:right="0.5dp" android:bottom="0.5dp" android:left="0.5dp">
+        <shape>
+            <solid android:color="?attr/colorPrimary"/>
+            <corners android:radius="30dp"/> <!-- Reduced by the same amount as the padding -->
+        </shape>
+    </item>
+</layer-list>

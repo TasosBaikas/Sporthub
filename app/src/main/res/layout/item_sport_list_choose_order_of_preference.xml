@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:clipChildren="false"
+    >
+
+
+    <TextView
+        android:id="@+id/priority_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="@+id/sport_card_view"
+        app:layout_constraintStart_toStartOf="@+id/sport_card_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sport_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priority_number">
+
+        <LinearLayout
+            android:layout_width="77dp"
+            android:layout_height="117dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sport_image"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/sport_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:layout_marginTop="3dp"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="Ποδόσφαιρο"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

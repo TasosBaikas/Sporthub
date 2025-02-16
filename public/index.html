@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sporthub redirect</title>
+
+
+
+  </head>
+  <body>
+	
+	<h1>
+		Μετάβαση στο sporthub... 
+	</h1>
+
+	<h2>
+		Αν δεν έχετε κάνει εγγραφή
+	</h2>
+
+  <h2>
+		1ον κάντε εγγραφή
+	</h2>
+    
+  <h2>
+		2ον πατήστε ξανά το link
+	</h2>
+
+
+
+
+  
+  <h2>Add Facebook Login to your webpage</h2>
+
+  <button onclick="triggerFBLogin();">Login with Facebook</button>
+
+      <!-- Set the element id for the JSON response -->
+    
+      <p id="profile"></p>
+
+      <script>
+  
+        <!-- Add the Facebook SDK for Javascript -->
+  
+        (function(d, s, id){
+                              var js, fjs = d.getElementsByTagName(s)[0];
+                              if (d.getElementById(id)) {return;}
+                              js = d.createElement(s); js.id = id;
+                              js.src = "https://connect.facebook.net/en_US/sdk.js";
+                              fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk')
+        );
+
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                      appId            : '906589517785732',
+                      xfbml            : true,
+                      version          : 'v18.0'
+                    });
+
+              FB.login(function(response) {
+                      if (response.authResponse) {
+                           console.log('Welcome!  Fetching your information.... ');
+                           FB.api('/me', {fields: 'name, email'}, function(response) {
+                               document.getElementById("profile").innerHTML = "Good to see you, " + response.name + ". i see your email address is " + response.email
+                           });
+                      } else { 
+                           console.log('User cancelled login or did not fully authorize.'); }
+            });
+        };
+
+
+        function triggerFBLogin() {
+        FB.login(function(response) {
+            if (response.authResponse) {
+                console.log('Welcome! Fetching your information.... ');
+                FB.api('/me', {fields: 'name, email'}, function(response) {
+                    document.getElementById("profile").innerHTML = "Good to see you, " + response.name + ". I see your email address is " + response.email;
+                });
+            } else { 
+                console.log('User cancelled login or did not fully authorize.');
+            }
+        }, {scope: 'public_profile'});
+    }
+
+      </script>
+
+
+
+
+    
+    <!-- Define the initial href with a placeholder for matchId -->
+  <a href="com.baikas.sporthub6://invite_friend?matchId=__MATCHID__" id="link"></a>
+
+  <script>
+    // Function to extract the matchId from the URL
+    function getMatchIdFromURL() {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get("matchId");
+    }
+
+    // Get the extracted matchId
+    const matchId = getMatchIdFromURL();
+
+    // Update the href attribute with the extracted matchId
+    if (matchId) {
+      const linkElement = document.getElementById('link');
+      linkElement.href = `com.baikas.sporthub6://invite_friend?matchId=${matchId}`;
+
+      document.addEventListener('DOMContentLoaded', function () {
+        // Trigger a click on the anchor tag
+        linkElement.click();
+      });
+    }
+  </script>
+  </body>
+</html>

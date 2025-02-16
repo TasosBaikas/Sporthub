@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_with_opacity">#71000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_with_opacity">#61FFFFFF</color>
+    <color name="dark_grey">#191919</color>
+    <color name="purple">#9C27B0</color>
+    <color name="pink_dark">#57415C</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#0023FF</color>
+    <color name="blue_light">#00CCFF</color>
+    <color name="blue_dark">#001597</color>
+    <color name="blue_not_much_dark">#081FA8</color>
+    <color name="blue_with_opacity">#C20014FF</color>
+    <color name="orange">#FFA726</color>
+    <color name="orange_for_cycling">#D86C1A</color>
+    <color name="orange_little_darker">#D88810</color>
+    <color name="yellow">#FFEE58</color>
+    <color name="yellow_for_star">#FFCE00</color>
+    <color name="yellow_with_opacity">#D9F1DE27</color>
+    <color name="green">#43C847</color>
+    <color name="green_with_opacity">#8700FF08</color>
+    <color name="green_little_dark">#0A932A</color>
+    <color name="green_dark">#135515</color>
+    <color name="red">#FF0000</color>
+    <color name="red_little_dark">#A60C0C</color>
+    <color name="lighter_red">#E32C2C</color>
+    <color name="skeleton_gray">#9A9494</color>
+    <color name="light_gray">#6BCED3CC</color>
+    <color name="skeleton_gray_background">#F5F5F5</color>
+
+    <color name="tempcolor">#E0E0E0</color>
+
+
+
+
+</resources>

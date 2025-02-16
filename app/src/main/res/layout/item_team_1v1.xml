@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:id="@+id/item_match_frame_layout"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <TextView
+            android:id="@+id/team_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:gravity="center"
+            android:text="20:00 - Δευτέρα"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/if_more_than_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="(3/2)"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/team_title"
+            app:layout_constraintStart_toEndOf="@+id/team_title"
+            app:layout_constraintTop_toTopOf="@+id/team_title" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/player1_profile_image"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="7dp"
+            android:clickable="true"
+            android:focusable="true"
+
+
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-4dp"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/player1_profile_image"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout7"
+            app:layout_constraintStart_toEndOf="@+id/player1_profile_image"
+            app:layout_constraintTop_toBottomOf="@+id/team_title">
+
+            <TextView
+                android:id="@+id/player1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="..."
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/player1_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Επίπεδο: ..."
+                android:textSize="11sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/player1_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textSize="11sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/player1_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="..."
+                android:textSize="11sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/already_joined"
+            android:layout_width="70dp"
+            android:layout_height="53dp"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="Είστε\nΜέλος"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/player1_profile_image"
+            app:layout_constraintEnd_toEndOf="@+id/join_match"
+            app:layout_constraintStart_toStartOf="@+id/join_match"
+            app:layout_constraintTop_toTopOf="@+id/player1_profile_image" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/join_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:minWidth="70dp"
+            android:minHeight="50dp"
+            android:padding="2dp"
+            android:text="Ακύρωση"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/player1_profile_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/player1_profile_image"
+            app:shapeAppearanceOverlay="@style/CustomButtonShapeAppearance"
+            app:strokeColor="@color/green"
+            app:strokeWidth="1dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/team_title"
+            app:layout_constraintEnd_toStartOf="@+id/team_title"
+            app:layout_constraintTop_toTopOf="@+id/team_title">
+
+
+            <ImageView
+                android:id="@+id/fire1"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginEnd="3dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/flame_svgrepo_com" />
+
+            <ImageView
+                android:id="@+id/fire2"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginEnd="3dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/flame_svgrepo_com" />
+
+            <ImageView
+                android:id="@+id/fire3"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginEnd="3dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/flame_svgrepo_com" />
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/join_match"
+            app:layout_constraintEnd_toStartOf="@+id/join_match"
+            app:layout_constraintTop_toTopOf="@+id/join_match">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="37dp" />
+
+            <ImageView
+                android:id="@+id/members_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="2dp"
+                android:padding="2dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline5"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/team_png" />
+
+            <TextView
+                android:id="@+id/members_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="..."
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+
+            <View
+                android:id="@+id/view_delimiter"
+                android:layout_width="0.4dp"
+                android:layout_height="0dp"
+                android:alpha="0.3"
+                android:background="?attr/colorOnPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/terrain_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:paddingTop="2dp"
+                android:src="@drawable/terrain_png"
+                app:layout_constraintBottom_toTopOf="@+id/guideline5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toTopOf="parent"
+                 />
+
+
+            <TextView
+                android:id="@+id/have_terrain_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="ίσως"
+                android:textColor="@color/orange"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/view_small_line"
+            layout="@layout/view_small_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

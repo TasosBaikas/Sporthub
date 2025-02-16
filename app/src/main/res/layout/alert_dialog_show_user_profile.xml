@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/alert_dialog_background"
+        >
+
+        <ProgressBar
+            android:id="@+id/loadingBar"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/green"
+            android:elevation="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/viewNeededForScaleAlertDialog"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="10dp"
+            android:padding="13dp"
+            android:src="@drawable/x_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/user_images_album"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/photos_image"
+            app:layout_constraintBottom_toBottomOf="@+id/user_profile_image"
+            app:layout_constraintEnd_toEndOf="@+id/user_profile_image"
+            app:layout_constraintStart_toEndOf="@+id/user_profile_image" />
+
+
+        <TextView
+            android:id="@+id/user_images_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="..."
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/user_images_album"
+            app:layout_constraintStart_toEndOf="@+id/user_images_album"
+            app:layout_constraintTop_toTopOf="@+id/user_images_album" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_image"
+            android:layout_width="224dp"
+            android:layout_height="214dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/no_profile_image_svg"
+
+
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/back_button" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:text="..."
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_profile_image" />
+
+        <TextView
+            android:id="@+id/region"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="3dp"
+            android:text="..."
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/edit_my_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:paddingHorizontal="10dp"
+            android:visibility="invisible"
+            android:padding="8dp"
+            android:text="Επεξεργασία προφίλ"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/region"
+            app:layout_constraintStart_toStartOf="@+id/region"
+            app:layout_constraintTop_toBottomOf="@+id/region"
+            app:shapeAppearanceOverlay="@style/CustomButtonShapeAppearance"
+            app:strokeColor="@color/orange"
+            app:strokeWidth="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/message_the_user_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:paddingHorizontal="10dp"
+            android:text="Στείλε μήνυμα"
+            android:textSize="13sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/region"
+            app:layout_constraintStart_toStartOf="@+id/region"
+            app:layout_constraintTop_toBottomOf="@+id/region"
+            app:shapeAppearanceOverlay="@style/CustomButtonShapeAppearance"
+            app:strokeColor="@color/blue"
+            app:strokeWidth="1dp" />
+
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="9dp"
+            android:text="Αξιοπιστία"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message_the_user_button" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="0dp"
+            android:layout_height="0.3dp"
+            android:layout_marginStart="8dp"
+            android:alpha="0.1"
+            android:background="?attr/colorOnPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/textView22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView22"
+            app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="3dp"
+            android:src="@drawable/star_filled"
+            app:layout_constraintStart_toStartOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:gravity="center"
+            android:text="Αξιοπιστία παίκτη:"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView34"
+            app:layout_constraintStart_toEndOf="@+id/imageView34"
+            app:layout_constraintTop_toTopOf="@+id/imageView34" />
+
+
+        <TextView
+            android:id="@+id/trustworth_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="?attr/colorOnPrimary"
+
+            android:text="4,6"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView23"
+            app:layout_constraintStart_toEndOf="@+id/textView23"
+            app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="2dp"
+            android:layout_gravity="center"
+            android:src="@drawable/star_not_filled"
+            app:layout_constraintBottom_toBottomOf="@+id/trustworth_count"
+            app:layout_constraintStart_toEndOf="@+id/trustworth_count"
+            app:layout_constraintTop_toTopOf="@+id/trustworth_count" />
+
+        <TextView
+            android:id="@+id/people_trustworth_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:text="(16)"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/trustworth_count"
+            app:layout_constraintStart_toEndOf="@+id/imageView35"
+            app:layout_constraintTop_toTopOf="@+id/trustworth_count" />
+
+
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="9dp"
+            android:text="Social media"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView34" />
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="0dp"
+            android:layout_height="0.3dp"
+            android:layout_marginStart="8dp"
+            android:alpha="0.1"
+            android:background="?attr/colorOnPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/textView21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView21"
+            app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+
+        <ImageView
+            android:id="@+id/instagram_icon"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="18dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView21"
+            app:srcCompat="@drawable/instagram_icon" />
+
+
+        <TextView
+            android:id="@+id/instagram_username_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Δεν έχει δηλωθεί"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/instagram_icon"
+            app:layout_constraintStart_toEndOf="@+id/instagram_icon"
+            app:layout_constraintTop_toTopOf="@+id/instagram_icon" />
+
+
+        <ImageView
+            android:id="@+id/facebook_icon"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="13dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/instagram_icon"
+            app:layout_constraintStart_toStartOf="@+id/instagram_icon"
+            app:layout_constraintTop_toBottomOf="@+id/instagram_icon"
+            app:srcCompat="@drawable/facebook_icon" />
+
+        <TextView
+            android:id="@+id/facebook_username_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Δεν έχει δηλωθεί"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/facebook_icon"
+            app:layout_constraintStart_toStartOf="@+id/instagram_username_text_view"
+            app:layout_constraintTop_toTopOf="@+id/facebook_icon" />
+
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="20dp"
+            android:text="Αθλήματα που ενδιαφέρουν"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/facebook_icon" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.3dp"
+            android:layout_marginStart="8dp"
+            android:alpha="0.1"
+            android:background="?attr/colorOnPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/textView20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView20"
+            app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_sport_for_user_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:clipChildren="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+

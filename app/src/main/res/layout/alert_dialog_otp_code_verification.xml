@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_with_borders"
+    android:padding="3dp"
+    >
+
+    <ProgressBar
+        android:id="@+id/loading_bar_send_code_again"
+        android:layout_width="22dp"
+        android:layout_height="0dp"
+        android:elevation="1dp"
+        android:layout_marginEnd="5dp"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/resend_code_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/resend_code_text_view"
+        app:layout_constraintTop_toTopOf="@+id/resend_code_text_view" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Συμπλήρωση κωδικού"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_back" />
+
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:padding="16dp"
+        android:src="@drawable/x_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="6dp"
+        android:padding="1dp"
+        android:src="@drawable/sms_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/text_input_otp_code_layout"
+        app:layout_constraintStart_toStartOf="@+id/text_input_otp_code_layout"
+        app:layout_constraintTop_toTopOf="@+id/text_input_otp_code_layout" />
+
+
+    <TextView
+        android:id="@+id/messageToUserTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Στέλνετε..."
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_input_otp_code_layout"
+        app:layout_constraintStart_toStartOf="@+id/text_input_otp_code_layout"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_otp_code_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="6-ψήφιος κωδικός"
+        android:textColorHint="@color/white_or_black_with_opacity_mode"
+        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+        app:boxStrokeColor="?attr/colorOnPrimary"
+        app:boxStrokeWidth="0.3dp"
+        app:boxStrokeWidthFocused="0.8dp"
+        app:hintTextColor="?attr/colorOnPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageToUserTextView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_otp_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:maxLength="6"
+
+            android:paddingStart="43dp"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_bar_validate_code"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:elevation="1dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/check_otp_code"
+        app:layout_constraintEnd_toStartOf="@+id/check_otp_code"
+        app:layout_constraintTop_toTopOf="@+id/check_otp_code" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/check_otp_code"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Επαλήθευση"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_input_otp_code_layout"
+        app:layout_constraintStart_toStartOf="@+id/text_input_otp_code_layout"
+        app:layout_constraintTop_toBottomOf="@+id/resend_code_text_view"
+        app:shapeAppearanceOverlay="@style/CustomButtonShapeAppearance"
+        app:strokeColor="@color/green"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/resend_code_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Ξαναστείλε κωδικό"
+        app:layout_constraintEnd_toEndOf="@+id/text_input_otp_code_layout"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_otp_code_layout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

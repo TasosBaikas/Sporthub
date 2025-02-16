@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <ImageView
+        android:id="@+id/rotate_image_more_popular"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:paddingVertical="7dp"
+        android:paddingEnd="7dp"
+        android:focusable="true"
+        android:src="@drawable/ic_back_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/user_image"
+        app:layout_constraintTop_toTopOf="@+id/user_image" />
+
+    <ImageView
+        android:id="@+id/rotate_image_less_popular"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:paddingVertical="7dp"
+        android:paddingStart="7dp"
+        android:focusable="true"
+        android:src="@drawable/ic_next_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/user_image"
+        app:layout_constraintTop_toTopOf="@+id/user_image" />
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginVertical="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

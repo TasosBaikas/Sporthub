@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/change_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Αλλαγή φωτογραφίας" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/delete_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Διαγραφή φωτογραφίας" />
+
+</LinearLayout>

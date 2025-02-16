@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_message_text_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false">
+
+
+    <TextView
+        android:id="@+id/textDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:paddingBottom="4dp"
+        android:text="DEMO"
+        android:textColor="?attr/colorOnPrimary"
+        android:visibility="gone"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="500dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:text="_"
+        android:autoLink="web"
+        android:background="@drawable/background_user_message"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/tick_status_image"
+        app:layout_constraintTop_toBottomOf="@+id/textDateTime" />
+    <!--we add/remove programmaticly the bottom constraint of the textMessage-->
+
+    <ImageView
+        android:id="@+id/tick_status_image"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/sand_clock"
+        app:layout_constraintBottom_toBottomOf="@+id/textMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+
+    <ImageView
+        android:id="@+id/heart_emoji"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/heart_png_not_selected"
+        app:layout_constraintBottom_toBottomOf="@+id/textMessage"
+        app:layout_constraintEnd_toStartOf="@+id/textMessage"
+        app:layout_constraintTop_toTopOf="@+id/textMessage" />
+
+
+    <TextView
+        android:id="@+id/message_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:text="WAITING_CONFIRMATION"
+        android:visibility="gone"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/textMessage"
+        app:layout_constraintTop_toBottomOf="@+id/textMessage" />
+
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/layout_emojis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:paddingTop="1dp"
+        android:paddingBottom="4dp"
+        app:alignItems="stretch"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_end"
+        app:layout_constraintEnd_toEndOf="@+id/textMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_status">
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/layout_seen_by_others"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:clipChildren="false"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="1dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_emojis"
+        app:flexWrap="wrap"
+        app:alignItems="stretch"
+        app:justifyContent="flex_end">
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

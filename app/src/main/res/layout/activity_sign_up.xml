@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="@color/white_or_black_primary_total"
+    tools:context=".activities.loginsignup.SignUpActivity">
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:elevation="1dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/sign_up_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_edit_text" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="12dp"
+        android:src="@drawable/arrow_back_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/signin"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/signin" />
+
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/register_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/signin"
+        app:layout_constraintEnd_toStartOf="@+id/signin"
+        app:layout_constraintTop_toTopOf="@+id/signin" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Εγγραφή"
+        android:textSize="30dp"
+        android:textColor="?attr/colorOnPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/error_message_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="15.5dp"
+        android:visibility="invisible"
+        android:text="Ο χρήστης δεν υπάρχει"
+        android:textSize="14sp"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toTopOf="@+id/email_or_phone_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/email_or_phone_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/email_or_phone_edit_text" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:paddingBottom="2dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/person"
+        app:layout_constraintBottom_toBottomOf="@+id/email_or_phone_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/email_or_phone_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/email_or_phone_edit_text" />
+
+    <EditText
+        android:id="@+id/email_or_phone_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/green"
+        android:hint="email/τηλέφωνο"
+        android:paddingVertical="20dp"
+        android:paddingStart="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin" />
+
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="15dp"
+        android:padding="3dp"
+        android:src="@drawable/password_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/password_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/password_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/password_edit_text" />
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_or_phone_edit_text"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="κωδικός"
+        android:backgroundTint="@color/green"
+        android:inputType="textPassword"
+        android:paddingVertical="20dp"
+        android:paddingStart="47dp"
+        app:layout_constraintEnd_toEndOf="@+id/email_or_phone_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/email_or_phone_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/email_or_phone_edit_text" />
+
+    <TextView
+        android:id="@+id/forgotpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/colorOnPrimary"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/password_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/password_edit_text" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sign_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="10dp"
+        android:layout_margin="23dp"
+        android:text="Εγγραφή"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/password_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/password_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/forgotpass"
+        app:shapeAppearanceOverlay="@style/CustomButtonShapeAppearance"
+        app:strokeColor="@color/green"
+        app:strokeWidth="2dp" />
+
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="0dp"
+        android:layout_height="0.8dp"
+        android:alpha="0.1"
+        android:layout_marginEnd="10dp"
+        android:background="?attr/colorOnPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintEnd_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Αλλιώς σύνδεση/εγγραφή με"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/google_btn"
+        app:layout_constraintEnd_toEndOf="@+id/google_btn"
+        app:layout_constraintStart_toStartOf="@+id/google_btn" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.8dp"
+        android:alpha="0.1"
+        android:layout_marginStart="10dp"
+        android:background="?attr/colorOnPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+    <ImageView
+        android:id="@+id/google_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/google_sign_in_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

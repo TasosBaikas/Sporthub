@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_with_borders"
+    android:padding="3dp"
+    >
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Αλλαγή ονόματος γηπέδου"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_image_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layout_image_back" />
+
+
+
+    <ImageView
+        android:id="@+id/layout_image_back"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:padding="12dp"
+        android:src="@drawable/x_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="?attr/colorOnPrimary"
+        android:textStyle="bold"
+        app:boxStrokeColor="?attr/colorOnPrimary"
+        app:boxStrokeWidth="0.3dp"
+        app:boxStrokeWidthFocused="0.8dp"
+        app:hintTextColor="?attr/colorOnPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_image_back">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_terrain_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:maxLength="60"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirm_save_address"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        android:text="Αλλαγή ονόματος"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout"
+        app:shapeAppearanceOverlay="@style/CustomButtonShapeAppearance"
+        app:strokeColor="@color/green"
+        app:strokeWidth="1dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

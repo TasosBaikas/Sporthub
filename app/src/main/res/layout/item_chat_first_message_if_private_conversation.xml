@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingTop="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/other_user_profile_image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/no_profile_image_svg"
+        android:visibility="visible"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/other_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="..."
+        android:textSize="21sp"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/other_user_profile_image"
+        app:layout_constraintStart_toStartOf="@+id/other_user_profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/other_user_profile_image" />
+
+    <TextView
+        android:id="@+id/other_region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="..."
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/other_username"
+        app:layout_constraintStart_toStartOf="@+id/other_username"
+        app:layout_constraintTop_toBottomOf="@+id/other_username" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="Το Ιδιωτικό chat δημιουργήθηκε."
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/other_username"
+        app:layout_constraintStart_toStartOf="@+id/other_username"
+        app:layout_constraintTop_toBottomOf="@+id/other_region" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.3dp"
+        android:layout_marginEnd="10dp"
+        android:alpha="0.1"
+        android:background="?attr/colorOnPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintEnd_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:alpha="0.7"
+        android:text="Εκκίνηση συνομιλίας"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/other_username"
+        app:layout_constraintStart_toStartOf="@+id/other_username"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"/>
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="0dp"
+        android:layout_height="0.3dp"
+        android:layout_marginStart="10dp"
+        android:alpha="0.1"
+        android:background="?attr/colorOnPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

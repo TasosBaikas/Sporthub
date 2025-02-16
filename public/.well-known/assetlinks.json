@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.baikas.sporthub6",
+    "sha256_cert_fingerprints":
+    ["34:25:E9:C7:C2:C6:BC:33:B0:25:8C:6D:95:BF:EA:F5:8A:DC:F4:99:59:46:47:00:A5:09:39:0E:C1:F2:1B:A1"]
+  }
+}]

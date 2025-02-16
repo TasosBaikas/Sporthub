@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8c9a678b-6a77-4378-bd39-a7bd5a2f03d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/baikas/sporthub6/fragments/loginsignup/SignUpAfterPart1Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/baikas/sporthub6/fragments/loginsignup/SignUpAfterPart1Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/baikas/sporthub6/viewmodels/loginsignup/SignUpAfterActivityAndFragmentsViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/baikas/sporthub6/viewmodels/loginsignup/SignUpAfterActivityAndFragmentsViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/functionsexports/httprequest/userrepository/userRepositorySaveUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/functionsexports/httprequest/userrepository/userRepositorySaveUser.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2cHTLx7H2lSl6SyLtog9KJWS6k5" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Android/Sporthub6/functions&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Android\Sporthub6\functions\src\functionsexports\httprequest\chatrepository\ifprivateconversation" />
+      <recent name="C:\Android\Sporthub6\functions\src\functionsexports\httprequest\chatrepository\ifmatchconversation" />
+      <recent name="C:\Android\Sporthub6\functions\src\functionsexports\httprequest\userprivacyrepository" />
+      <recent name="C:\Android\Sporthub6\functions\src\models\user" />
+      <recent name="C:\Android\Sporthub6\functions\src\functionsexports\httprequest\userimagerepository" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Android\Sporthub6\functions\src\functionsexports\httprequest\userprivacyrepository" />
+      <recent name="C:\Android\Sporthub6\functions\src\functionsexports\httprequest\chatrepository\ifmatchconversation" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c9a678b-6a77-4378-bd39-a7bd5a2f03d4" name="Changes" comment="" />
+      <created>1707767454436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707767454436</updated>
+      <workItem from="1707767457590" duration="6261000" />
+      <workItem from="1707827953405" duration="1015000" />
+      <workItem from="1707835113252" duration="452000" />
+      <workItem from="1707914333625" duration="4514000" />
+      <workItem from="1707946977570" duration="2716000" />
+      <workItem from="1708121799173" duration="5450000" />
+      <workItem from="1708204614844" duration="2382000" />
+      <workItem from="1708279430769" duration="4910000" />
+      <workItem from="1708353574452" duration="9098000" />
+      <workItem from="1708443139525" duration="13485000" />
+      <workItem from="1708525396663" duration="2314000" />
+      <workItem from="1708707824484" duration="9775000" />
+      <workItem from="1708779176245" duration="1063000" />
+      <workItem from="1708796718745" duration="22750000" />
+      <workItem from="1708861918410" duration="12391000" />
+      <workItem from="1708976677495" duration="29000" />
+      <workItem from="1709136443545" duration="2987000" />
+      <workItem from="1709214301661" duration="26000" />
+      <workItem from="1709240500545" duration="4145000" />
+      <workItem from="1709293463186" duration="712000" />
+      <workItem from="1709479226670" duration="53000" />
+      <workItem from="1709495986085" duration="1885000" />
+      <workItem from="1709563014387" duration="62000" />
+      <workItem from="1709570315737" duration="607000" />
+      <workItem from="1709725005094" duration="1158000" />
+      <workItem from="1709744238253" duration="595000" />
+      <workItem from="1709746834172" duration="1473000" />
+      <workItem from="1709758400286" duration="610000" />
+      <workItem from="1709895234737" duration="40000" />
+      <workItem from="1709994291565" duration="4731000" />
+      <workItem from="1710013193512" duration="31000" />
+      <workItem from="1710162718383" duration="949000" />
+      <workItem from="1710273787166" duration="3328000" />
+      <workItem from="1710446833611" duration="36000" />
+      <workItem from="1710453272050" duration="648000" />
+      <workItem from="1710457260046" duration="2225000" />
+      <workItem from="1710507481830" duration="1055000" />
+      <workItem from="1710595868018" duration="10692000" />
+      <workItem from="1710690677352" duration="9103000" />
+      <workItem from="1710767918320" duration="98000" />
+      <workItem from="1710880993272" duration="8046000" />
+      <workItem from="1710932591074" duration="8260000" />
+      <workItem from="1711021147299" duration="3207000" />
+      <workItem from="1711107940732" duration="2329000" />
+      <workItem from="1711661545411" duration="612000" />
+      <workItem from="1711810556617" duration="782000" />
+      <workItem from="1713373486622" duration="6138000" />
+      <workItem from="1713391075728" duration="1536000" />
+      <workItem from="1713446147475" duration="1367000" />
+      <workItem from="1713470037167" duration="1373000" />
+      <workItem from="1716395128530" duration="46000" />
+      <workItem from="1739714290833" duration="43000" />
+      <workItem from="1739714338444" duration="451000" />
+      <workItem from="1739714794104" duration="482000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

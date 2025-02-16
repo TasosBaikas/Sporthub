@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_message_text_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false">
+
+    <TextView
+        android:id="@+id/textDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="DEMO"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="13sp"
+
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/other_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Περαστικός P."
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="13.5sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/other_profile_image"
+        app:layout_constraintStart_toStartOf="@+id/textMessage"
+        app:layout_constraintTop_toBottomOf="@+id/textDateTime" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/other_profile_image"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="3dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/no_profile_image_svg"
+
+
+        app:layout_constraintBottom_toBottomOf="@+id/textMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMessage" />
+
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="8dp"
+        android:autoLink="web"
+        android:background="@drawable/background_other_message"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/other_profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/other_name"/>
+
+    <ImageView
+        android:id="@+id/heart_emoji"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/heart_png_not_selected"
+        app:layout_constraintBottom_toBottomOf="@+id/textMessage"
+        app:layout_constraintStart_toEndOf="@+id/textMessage"
+        app:layout_constraintTop_toTopOf="@+id/textMessage" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/layout_emojis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="1dp"
+        android:paddingBottom="4dp"
+        app:alignItems="stretch"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textMessage"
+        app:layout_constraintTop_toBottomOf="@+id/textMessage">
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/layout_seen_by_others"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:paddingBottom="2dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_emojis"
+        app:flexWrap="wrap"
+        app:alignItems="stretch"
+        app:justifyContent="flex_end">
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="bottom_navigation_menu_height">73dp</dimen>
+    <dimen name="dimensions_1v1">90dp</dimen>
+    <dimen name="player_image_dimen">64dp</dimen>
+    <dimen name="player_1v1_image_margin_from_side">20dp</dimen>
+    <dimen name="player_2v2_image_margin_from_side">33dp</dimen>
+    <dimen name="tag_margin_from_side">7dp</dimen>
+    <dimen name="margin_start_sport_images">6dp</dimen>
+    <dimen name="sport_image_width">53dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+</resources>

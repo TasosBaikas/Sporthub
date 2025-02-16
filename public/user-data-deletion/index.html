@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Data Deletion Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, p {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 1em;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Data Deletion Request</h1>
+        <p>Please fill in the form below to request the deletion of your personal data from our system.</p>
+        <form id="dataDeletionForm">
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('dataDeletionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            // TODO: Implement functionality to handle the data deletion request
+            console.log('Data Deletion Request submitted for:', name, email);
+
+            // You can add an AJAX request here to send data to your server or an API endpoint
+        });
+    </script>
+</body>
+</html>

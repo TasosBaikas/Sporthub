@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:elevation="1dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/green"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/ok_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/choose_terrain_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Επιλογή γηπέδου "
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back_button" />
+
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="10dp"
+        android:padding="15dp"
+        android:src="@drawable/x_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="vertical"
+        android:paddingEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_button">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/i_have_certain_terrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/I_HAVE_CERTAIN_TERRAIN"
+             />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/i_have_not_certain_terrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/I_HAVE_NOT_CERTAIN_TERRAIN"
+             />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/i_dont_have_terrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/I_DONT_HAVE_TERRAIN"
+             />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="?attr/colorOnPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/layout_choose_terrain_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_add_terrain"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:visibility="invisible"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <TextView
+            android:id="@+id/textView120"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="Επίλεξε γήπεδο"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/add_new_terrain_address_if_does_not_exist"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:padding="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView120"
+            app:layout_constraintStart_toEndOf="@+id/textView120"
+            app:layout_constraintTop_toTopOf="@+id/textView120"
+            android:src="@drawable/plus_sign_green" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_choose_terrain_spinner"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:visibility="invisible"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="15dp"
+            android:text="Επιλογή γηπέδου από τα αποθηκευμένα"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/dropdown_menu_terrain"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <ImageView
+            android:id="@+id/add_new_terrain_address"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="-7dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/dropdown_menu_terrain"
+            app:layout_constraintStart_toEndOf="@+id/dropdown_menu_terrain"
+            app:layout_constraintTop_toTopOf="@+id/dropdown_menu_terrain"
+            android:src="@drawable/plus_sign_green" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/no_terrain_choose_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Δεν χρειάζεται να επιλέξετε γήπεδο"
+        android:visibility="invisible"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_choose_terrain_spinner"
+        app:layout_constraintEnd_toEndOf="@+id/layout_choose_terrain_spinner"
+        app:layout_constraintStart_toStartOf="@+id/layout_choose_terrain_spinner"
+        app:layout_constraintTop_toTopOf="@+id/layout_choose_terrain_spinner" />
+
+
+    <TextView
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginEnd="14dp"
+        android:padding="9dp"
+        android:text="Οκ"
+        android:textSize="18.5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_choose_terrain_spinner" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

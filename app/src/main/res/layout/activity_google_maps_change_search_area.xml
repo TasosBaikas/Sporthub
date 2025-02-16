@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.googlemaps.GoogleMapsChangeSearchArea">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <ProgressBar
+        android:id="@+id/loadingBar2"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/green"
+        android:elevation="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:radius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_confirm_address_latLng"
+        app:layout_constraintEnd_toEndOf="@+id/button_confirm_address_latLng"
+        app:layout_constraintStart_toStartOf="@+id/button_confirm_address_latLng">
+
+        <SeekBar
+            android:id="@+id/radiusSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:max="25000"
+            android:min="1500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/radius_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/radius_text"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="10 km"
+            android:textColor="?attr/colorAccent"
+            android:textSize="27sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_confirm_address_latLng"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="Ενημέρωση ακτίνας αναζήτησης"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/description_to_user_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingHorizontal="40dp"
+        android:text="Ορίστε μέχρι πόσο μακριά θέλετε να γίνει η αναζήτηση ομάδας."
+        android:textColor="@color/black"
+        android:background="#B88F8A8A"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_or_black_primary_total"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white_or_black_primary_total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_or_black_primary_total">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.11" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.89" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout7"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:src="@drawable/no_profile_image_svg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/upload"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="-3dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/user_image"
+                    app:layout_constraintEnd_toEndOf="@+id/user_image"
+                    app:srcCompat="@drawable/ic_menu_upload" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/person"
+                app:layout_constraintBottom_toBottomOf="@+id/text_input_layout_first_name"
+                app:layout_constraintStart_toStartOf="@+id/text_input_layout_first_name"
+                app:layout_constraintTop_toTopOf="@+id/text_input_layout_first_name" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout_first_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="25dp"
+
+                android:hint="Όνομα"
+                android:textColorHint="@color/white_or_black_with_opacity_mode"
+                app:boxStrokeColor="@color/green"
+                app:boxStrokeWidth="0.8dp"
+                app:boxStrokeWidthFocused="1.5dp"
+                app:hintTextColor="?attr/colorOnPrimary"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_input_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="43dp"
+                    android:maxLength="13"
+                    android:textCursorDrawable="@null"
+                    android:textSize="17sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/person"
+                app:layout_constraintBottom_toBottomOf="@+id/text_input_layout_last_name"
+                app:layout_constraintStart_toStartOf="@+id/text_input_layout_last_name"
+                app:layout_constraintTop_toTopOf="@+id/text_input_layout_last_name" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout_last_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="23dp"
+                android:hint="Επώνυμο"
+                android:textColorHint="@color/white_or_black_with_opacity_mode"
+                app:boxStrokeColor="@color/green"
+                app:boxStrokeWidth="0.8dp"
+                app:boxStrokeWidthFocused="1.5dp"
+                app:hintTextColor="?attr/colorOnPrimary"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/text_input_layout_first_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_input_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="43dp"
+                    android:textCursorDrawable="@null"
+
+                    android:maxLength="13"
+                    android:textSize="17sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:padding="2dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/age_birthday_cake"
+                app:layout_constraintBottom_toBottomOf="@+id/text_input_layout_age"
+                app:layout_constraintStart_toStartOf="@+id/text_input_layout_age"
+                app:layout_constraintTop_toTopOf="@+id/text_input_layout_age" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout_age"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+
+
+                android:layout_marginTop="23dp"
+                android:hint="Ηλικία"
+                android:textColorHint="@color/white_or_black_with_opacity_mode"
+                app:boxStrokeColor="@color/green"
+                app:boxStrokeWidth="0.8dp"
+                app:boxStrokeWidthFocused="1.5dp"
+                app:hintTextColor="?attr/colorOnPrimary"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/text_input_layout_last_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_input_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="43dp"
+
+                    android:inputType="number"
+                    android:maxLength="2"
+
+                    android:textCursorDrawable="@null"
+                    android:textSize="17sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="6dp"
+                android:padding="1dp"
+                android:src="@drawable/phone_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/text_input_phone_layout"
+                app:layout_constraintStart_toStartOf="@+id/text_input_phone_layout"
+                app:layout_constraintTop_toTopOf="@+id/text_input_phone_layout" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_phone_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="23dp"
+                android:hint="Αριθμός τηλεφώνου"
+                android:textColorHint="@color/white_or_black_with_opacity_mode"
+                android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+                app:boxStrokeColor="@color/green"
+                app:boxStrokeWidth="0.8dp"
+                app:boxStrokeWidthFocused="1.5dp"
+                app:hintTextColor="?attr/colorOnPrimary"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/text_input_layout_age">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_input_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingStart="43dp"
+
+                    android:textCursorDrawable="@null"
+                    android:textSize="17sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/send_otp_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="10dp"
+                android:text="Στείλε κωδικό"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/text_input_phone_layout"
+                app:layout_constraintTop_toBottomOf="@+id/text_input_phone_layout"
+                app:shapeAppearanceOverlay="@style/CustomButtonShapeAppearance"
+                app:strokeColor="@color/green"
+                app:strokeWidth="1.5dp" />
+
+            <TextView
+                android:id="@+id/phone_validated_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:gravity="center"
+                android:text="Χρειάζεται επαλήθευση"
+                android:textSize="14sp"
+                android:textColor="@color/red"
+                app:layout_constraintBottom_toBottomOf="@+id/send_otp_code"
+                app:layout_constraintEnd_toStartOf="@+id/send_otp_code"
+                app:layout_constraintStart_toStartOf="@+id/text_input_phone_layout"
+                app:layout_constraintTop_toTopOf="@+id/send_otp_code" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
